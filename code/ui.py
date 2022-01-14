@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '/Users/samuel/DL_hw/client.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1025, 763)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName("tabWidget")
+        self.bird_tab = QtWidgets.QWidget()
+        self.bird_tab.setObjectName("bird_tab")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.bird_tab)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.bird_a1 = QtWidgets.QLabel(self.bird_tab)
+        self.bird_a1.setObjectName("bird_a1")
+        self.gridLayout_2.addWidget(self.bird_a1, 6, 0, 1, 1)
+        self.gridLayout_3 = QtWidgets.QGridLayout()
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.bird_submit_button = QtWidgets.QPushButton(self.bird_tab)
+        self.bird_submit_button.setObjectName("bird_submit_button")
+        self.gridLayout_3.addWidget(self.bird_submit_button, 0, 1, 1, 1)
+        self.bird_input = QtWidgets.QLineEdit(self.bird_tab)
+        self.bird_input.setObjectName("bird_input")
+        self.gridLayout_3.addWidget(self.bird_input, 0, 0, 1, 1)
+        self.gridLayout_3.setColumnStretch(0, 10)
+        self.gridLayout_2.addLayout(self.gridLayout_3, 2, 0, 1, 1)
+        self.gridLayout_4 = QtWidgets.QGridLayout()
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.bird_g2 = QtWidgets.QLabel(self.bird_tab)
+        self.bird_g2.setObjectName("bird_g2")
+        self.gridLayout_4.addWidget(self.bird_g2, 0, 2, 1, 1)
+        self.bird_g0 = QtWidgets.QLabel(self.bird_tab)
+        self.bird_g0.setObjectName("bird_g0")
+        self.gridLayout_4.addWidget(self.bird_g0, 0, 0, 1, 1)
+        self.bird_g1 = QtWidgets.QLabel(self.bird_tab)
+        self.bird_g1.setObjectName("bird_g1")
+        self.gridLayout_4.addWidget(self.bird_g1, 0, 1, 1, 1)
+        self.gridLayout_2.addLayout(self.gridLayout_4, 4, 0, 1, 1)
+        self.bird_show_sent = QtWidgets.QLabel(self.bird_tab)
+        self.bird_show_sent.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.bird_show_sent.setObjectName("bird_show_sent")
+        self.gridLayout_2.addWidget(self.bird_show_sent, 3, 0, 1, 1)
+        self.gridLayout_2.setRowStretch(0, 1)
+        self.gridLayout_2.setRowStretch(1, 1)
+        self.gridLayout_2.setRowStretch(2, 1)
+        self.gridLayout_2.setRowStretch(3, 1)
+        self.gridLayout_2.setRowStretch(4, 50)
+        self.gridLayout_2.setRowStretch(5, 25)
+        self.tabWidget.addTab(self.bird_tab, "")
+        self.coco_tab = QtWidgets.QWidget()
+        self.coco_tab.setObjectName("coco_tab")
+        self.tabWidget.addTab(self.coco_tab, "")
+        self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1025, 22))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(0)
+        self.bird_submit_button.clicked.connect(self.bird_submit)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.bird_submit_button.setText(_translate("MainWindow", "Submit !"))
+        #self.bird_input.setText(_translate("MainWindow", "Show your sentence here !"))
+        self.bird_input.setText(_translate("MainWindow", "this bird is red with white and has a very short beak"))
+        self.bird_show_sent.setText(_translate("MainWindow", "csa"))
+        self.bird_g0.setText(_translate("MainWindow", ""))
+        self.bird_g1.setText(_translate("MainWindow", ""))
+        self.bird_g2.setText(_translate("MainWindow", ""))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.bird_tab), _translate("MainWindow", "CUB"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.coco_tab), _translate("MainWindow", "COCO"))
+
